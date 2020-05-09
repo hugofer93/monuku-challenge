@@ -1,0 +1,18 @@
+# /etc/uwsgi/sites/project.ini
+[uwsgi]
+for-readline = /path/project/.env
+  env = %(_)
+endfor =
+
+plugin = python3
+single-interpreter = true
+
+chdir = /path/project/
+home = /path/project/.venv/
+module = project.wsgi:application
+
+socket = /path/project/project.sock
+chmod-socket = 660
+
+vacuum = true
+die-on-term = true

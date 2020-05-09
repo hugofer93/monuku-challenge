@@ -1,0 +1,22 @@
+# /etc/nginx/site-available/project.com
+server {
+    # the port your site will be served on
+    listen      80;
+
+    # the domain name it will serve for
+    server_name _; # substitute your machine's IP address or FQDN
+
+    # max upload size
+    client_max_body_size 1M;   # adjust to upload files
+
+    # Django static files
+    location /static {
+        alias /path/your/project/staticfiles; # your Django project's static files - amend as required
+    }
+
+    # Finally, send all non-media requests to the Django server.
+    location / {
+        uwsgi_pass  unix:///path/your/project.sock;
+        include     uwsgi_params; # the uwsgi_params file you installed
+    }
+}
