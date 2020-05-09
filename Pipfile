@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "==2.5"
+pycodestyle = "==2.5"
+pylint-django = "==2.0.15"
+pytest-django = "==3.9.0"
+pytest-xdist = "==1.32.0"
+django-debug-toolbar = "==2.2"
+
+[packages]
+python-decouple = "==3.3"
+django = "==2.2.12"
+djangorestframework = "==3.11"
+
+[requires]
+python_version = "3.6"

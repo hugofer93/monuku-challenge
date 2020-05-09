@@ -1,0 +1,59 @@
+[
+  {
+      "model": "core.user",
+      "pk": 1,
+      "fields": {
+          "password": "!M4dygH3ZWfd0214U59OR9nlwsRJ94HUZtvQciG8y",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "admin",
+          "first_name": "administrator",
+          "last_name": "testing",
+          "email": "admin@admin.com",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2020-05-07T09:32:50.998Z",
+          "groups": [],
+          "user_permissions": [],
+          "role": [1]
+      }
+  },
+  {
+    "model": "core.user",
+    "pk": 2,
+    "fields": {
+        "password": "!M4dygH3ZWfd0214U59OR9nlwsRJ94HUZtvQciG8y",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "reader",
+        "first_name": "read",
+        "last_name": "test",
+        "email": "read@read.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-05-07T09:32:50.998Z",
+        "groups": [],
+        "user_permissions": [],
+        "role": [2]
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 3,
+    "fields": {
+        "password": "!M4dygH3ZWfd0214U59OR9nlwsRJ94HUZtvQciG8y",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "editor",
+        "first_name": "edit",
+        "last_name": "test",
+        "email": "ed@ed.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-05-07T09:32:50.998Z",
+        "groups": [],
+        "user_permissions": [],
+        "role": [3]
+    }
+  }
+]
