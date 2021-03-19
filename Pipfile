@@ -14,7 +14,7 @@ django-debug-toolbar = "==2.2"
 [packages]
 python-decouple = "==3.3"
 django = "==2.2.12"
-djangorestframework = "==3.11"
+djangorestframework = "==3.11.2"
 
 [requires]
 python_version = "3.6"
